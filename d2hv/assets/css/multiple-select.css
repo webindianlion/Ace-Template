@@ -1,0 +1,303 @@
+/* Copyright (c) 2016 AD2C INDIA PVT. LTD.
+ *
+ *
+ * @package       SAAS SDK
+ * @copyright     AFFLE INDIA PVT. LTD.
+ * @author        Chetana Srivastava <chetana.srivastava@affle.com>
+ * @license       Proprietary
+ * @Description   CSS for Analytics module.
+ *
+ */
+
+.ms-parent {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding: 0px 0px !important;
+    height: 32px !important;
+    border-radius: 4px !important;
+    border: 1px solid #ccc !important;
+}
+
+.ms-choice {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0px solid #aaa;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 26px;
+    color: #555;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background:#f8f8f8;
+    padding: 0 10px;
+}
+.ms-choice:hover {  background:#e8e8e8;  transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out; }
+.rt-control .ms-parent,.rt-control .ms-choice{color: #555; background-color: #dddddd;}
+.rt-control .ms-parent:hover, .rt-control .ms-parent:focus, .rt-control .ms-parent:active, .rt-control .ms-choice:hover, .rt-control .ms-choice:focus, .rt-control .ms-choice:active{ background-color: #c4c4c4;}
+.ms-choice.disabled {
+    background-color: #f4f4f4;
+    background-image: none;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+.ms-choice > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding-left: 28px;
+    font-size: 12px; line-height: 32px;
+    width: 166px;
+}
+
+.ms-choice > span.placeholder {
+    color: #999;
+}
+.ms-choice > i.fa-times-circle{
+position:relative; 
+font:normal normal normal 14px/1.9 FontAwesome; 
+right:8%; float:right; background:#f8f8f8;}
+.ms-choice > div {
+    position: inherit;
+    top: 0;
+    right: 100px;
+    width: 180px;
+    height: 32px;
+    background: url('../image/multiple-select.png') no-repeat 165px 3px;
+}
+.ms-drop {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    margin-top: -1px;
+    padding: 0;
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-top: 0;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 0px;
+    -moz-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;    
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;  
+    /*margin-left: -0.5%;*/
+}
+
+.ms-drop.bottom {
+    top: 100%;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+}
+
+.ms-drop.top {
+    bottom: 100%;
+    -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+    box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+}
+
+.ms-search {
+    display: inline-block;
+    margin: 0;
+    min-height: 26px;
+    padding: 4px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 10000;
+}
+
+.ms-search input {
+    width: 100%;
+    height: auto !important;
+    min-height: 24px;
+    padding: 0 20px 0 5px;
+    margin: 0;
+    outline: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #fff url('../image/multiple-select.png') no-repeat 100% -22px;
+    background: url('../image/multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+    background: url('../image/multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url('../image/multiple-select.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url('../image/multiple-select.png') no-repeat 100% -22px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+    background: url('../image/multiple-select.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+    background: url('../image/multiple-select.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+}
+
+.ms-search, .ms-search input {
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ms-drop ul {
+    overflow: auto;
+    margin: 0;
+    padding: 5px 2px;
+}
+
+.ms-drop ul > li {
+    list-style: none;
+    display: list-item;
+    background-image: none;
+    position: static;
+}
+.ms-drop ul > li.mschild {
+    margin-left: 15px;
+}
+.ms-drop ul > li.group.mschild, .ms-drop ul > li.ms-select-all.mschild {
+    margin-left: 0px;
+}
+.ms-drop ul > li .disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+}
+
+.ms-drop ul > li.multiple {
+    display: block;
+    float: left;
+}
+
+.ms-drop ul > li.group {
+    clear: both;
+}
+
+.ms-drop ul > li.multiple label {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ms-drop ul > li label {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    font-size: 12px;    
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.ms-drop ul > li label.optgroup {
+    font-weight: normal;
+}
+
+.ms-drop input[type="checkbox"] {
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.ms-drop .ms-no-results {
+    display: none;
+}
+#resetCampn {
+  position: relative;float: left; right: -76%; margin-top: 4%;
+}
+
+#resetPub {
+  position: relative; float: left; right: -76%; margin-top: -12%;
+}
+@media(max-width:1024px){
+   #resetCampn, #resetPub {margin-top: -8%; right: -84%;}
+   .ms-choice > div { width: 20px;
+    background: url('../image/multiple-select.png') no-repeat 0% 3px;
+    float: right;
+}
+}
+@media(max-width:991px){
+    #resetPub {margin-top: -9%; right: -80%;}
+    #resetCampn {margin-top: -9%; }
+}
+@media(max-width:850px){
+    #resetPub {margin-top: -9.8%; right: -78%;}
+    #resetCampn {margin-top: -9.8%; }
+}
+@media(max-width:768px){
+    #resetCampn{margin-top: -11.8%; right: -78%;}
+    #resetPub {margin-top: -11.8%; right: -72%;}
+    .cohorts-reports .ms-choice{padding: 0 0;}
+    .cohorts-reports .ms-choice > div{background: url('../image/multiple-select.png') no-repeat 104% 3px;}
+}
+@media(max-width:640px){
+   #resetCampn, #resetPub {margin-top: -3.8%; right: -89%;}
+}
+@media(max-width:480px){
+    #resetCampn, #resetPub {margin-top: -5.8%; right: -89%;}
+}
+@media(max-width:400px){
+    #resetCampn, #resetPub {margin-top: -8%; right: -89%;}
+    .cohorts-reports .ms-choice > div{background: url('../image/multiple-select.png') no-repeat 108% 3px;}
+}
+.ms-drop.bottom .ms-search input {
+   border:0px;
+   border-bottom: 1px solid #277ebd;
+   border-radius: 0px !important; padding-right: 30px;
+}
+.ms-drop.bottom .ms-search:after {
+    content: "\f002";
+    display: inline-block;
+    color: #888;
+    font-family: FontAwesome;
+    font-size: 14px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    z-index: 2;
+}
+.ms-drop.bottom .ms-search:hover:after{color: #555;}
+.main-content.dr .fa-times-circle:before , .main-content.hrt .fa-times-circle:before{font-size: 18px;
+    color: #666; cursor: pointer;}
+
+/* to hide group options in publisher dropdown */
+.pubFirstMed li.mschild:nth-child(2){
+   display:none;
+}
+.pubFirstMed li.mschild:nth-child(3){
+   margin-left: 0px !important;
+}
+.pubFirstMed li.mschild:nth-child(4){
+   display:none;
+}
+.pubFirstMed li.mschild:nth-child(5){
+   margin-left: 0px !important;
+}
+@media(max-width:480px){
+    .ms-choice{padding: 0;}
+   .ms-choice > div{background:  url('../image/multiple-select.png') no-repeat 106% 3px}
+}
+@media(max-width:340px){
+    #resetCampn, #resetPub{right : -85%;}
+}

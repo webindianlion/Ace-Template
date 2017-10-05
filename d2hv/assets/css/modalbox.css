@@ -1,0 +1,123 @@
+/**
+ * Copyright (c) 2014 AD2C INDIA PVT. LTD.
+ *
+ * @package       AD2CAMPAIGN
+ * @copyright     AD2C INDIA PVT. LTD.
+ * @author        suryadev <surya@affle.co>
+ * @license       Proprietary
+ * @Description   CSS apply to all type of miodel box.
+ *
+ */
+
+/*** Model Box CSS ***/
+
+.popup-inner{
+  position:fixed;
+  width:420px;
+  z-index:999999;
+  top:50%;
+  left:50%;
+  margin-left:-210px;
+  margin-top:-150px;
+  text-align: center;
+  box-shadow: 0px 0px 5px 2px;
+  background: transparent;
+}
+.popup-inner .aff-modal-header{background: #ffffff;position:relative;}
+.popup-wrapper{background:#ffffff;height:100%;}
+.popup-inner .modal-header{}
+#outPopUp a{position:absolute;top:0px;right:24px;}
+#outPopUp a i{position:absolute;top:2px;font-size:25px;}
+#outPopUp a:active{color:#f7941d;}
+
+
+
+#outPopUp .popup-inner  { box-shadow: 0px 0px 0px;}
+#outPopUp .error-heading {    font-family: open sans;    font-size: 21px;    color: #555555;    font-weight: 600;    margin-top: 7px;  }
+#outPopUp #cover { background: rgba(000, 000, 000, 0.7); z-index: 999999;}
+#outPopUp .popup-wrapper { border-radius: 5px;  padding-top: 5px;  }
+#outPopUp .btn-yes    {  background: #5d8fc2 !important; } 
+#outPopUp .btn-yes:hover { background-color: #4175ab !important; }
+#outPopUp .btn-yes:active { position: relative; top: 1px; }
+#outPopUp .btn-cancel   {  background: #555555 !important; }
+#outPopUp .btn-cancel:hover { background-color: #303030 !important; }
+#outPopUp .btn-cancel:active { position: relative; top: 1px; }
+#outPopUp .btn-conrol {    padding: 20px 0px 25px;  }
+.btn-conrol > div {  border: 0px;    border-radius: 4px;    padding: 6px 12px;    text-shadow: 0px 0px;     background: #5d8fc2 !important;     display: inline-block;    color: #FFF !important;    transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;    cursor: pointer;    vertical-align: middle;    line-height: 20px;  }
+
+#outPopUp a.hideModelBox { font-size: 33px; font-weight: 700; color: #000; opacity: 0.2;     top: -6px; right: 14px;}
+#outPopUp a i {  top: 2px;    font-size: 18px;  }
+#outPopUp .btn-ok {  border: 0px;    border-radius: 4px;    padding: 6px 12px;    text-shadow: 0px 0px;    background-color: #5d8fc2 !important;     display: inline-block;    color: #FFF !important;    transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;    cursor: pointer;    vertical-align: middle;    line-height: 20px;     left: 0px;  margin-left: 0px; }
+#outPopUp .btn-ok:hover { background-color: #4175ab !important; }
+#outPopUp .btn-ok:active { top: 1px; }
+
+
+#cover{ 
+  position:fixed; top:0; left:0;
+  background:rgba(000, 000, 000, 0.5); 
+  z-index:9999; width:100%; height:100%; display:block; 
+} 
+.btn-ok{ 
+  border: 1px solid #1268b3;
+  width: 110px;
+  text-align: center;
+  color: #8aafce;         
+  position: relative;
+  left: 50%;         
+  cursor:pointer;
+  font-size: 13px;
+  height:32px;
+  line-height: 30px;
+  margin-left: -55px;
+  margin-top:30px;
+  margin-bottom: 20px;
+}
+
+.btn-ok:active,.btn-yes:active,.btn-cancel:active{background-color:#1268b3;}
+.error-icon img{height:95px;margin-top:25px;}
+.error-heading{font-family: open sans;font-size: 37px;color: #8aafce;}
+.popUpContent{font-size: 13px;color: #585858; padding-left: 20px; padding-right: 20px;text-align: center;}
+
+/** End Model Box CSS **/
+
+/********* Confirm Modal Box  **********/
+.btn-conrol{padding:20px 0px;}
+.btn-conrol .btn-yes{margin-right: 10px;}
+.btn-yes,.btn-cancel{
+  border: 1px solid #1268b3;
+  width: 110px;
+  text-align: center;
+  color: #8aafce;         
+  position: relative;                 
+  cursor:pointer;
+  font-size: 13px;
+  height:32px;
+  line-height: 30px;        
+  display: inline-block;
+}
+
+.welcome-popup{
+  padding: 214px 32px 0 0;
+  padding-bottom: 0;
+  font-family: 'Open Sans';
+  font-size: 13px;
+}
+
+.welcome-popup .fa-angle-right {
+  padding: 210px 5px 3px 0;
+}
+
+.popup-inner.welcome{
+  height: 252px !important;
+}
+
+.popup-wrapper.analytics-error{
+  height: 355px !important;
+}
+.analytics-error .btn-ok{
+  margin-top: 16px;
+}
+#outPopUp a.hideModelBox:hover, #outPopUp a.hideModelBox:focus{opacity: .5}
+@media(max-width:440px){
+.popup-inner{width: 260px; margin-left: -130px}
+} 

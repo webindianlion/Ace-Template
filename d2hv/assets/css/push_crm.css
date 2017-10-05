@@ -1,0 +1,853 @@
+/* line 2, push_crm.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 3, push_crm.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 4, push_crm.scss */
+.modal {
+  width: 620px;
+  box-shadow: none;
+  border: 0;
+  float: left;
+  padding: 0 !important;
+  margin: 0;
+  left: 50%;
+  margin-left: -310px;
+  top: 50%;
+  margin-top: -190px;
+  bottom: inherit !important;
+  overflow-y: hidden !important;
+  z-index: 99991;
+  border-radius: 4px;
+}
+
+/* line 20, push_crm.scss */
+.modal.in .modal-dialog {
+  background: #ffffff;
+  margin-top: 85px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* line 23, push_crm.scss */
+.modal-content {
+  border: 0;
+}
+
+/* line 24, push_crm.scss */
+.modal-content .close {
+  font-size: 33px;
+  margin: 10px 14px;
+  position: absolute;
+  right: 0px;
+}
+
+/* line 27, push_crm.scss */
+.modal-content .modal-header {
+  padding: 25px 15px;
+  border-bottom: none;
+}
+
+/* line 30, push_crm.scss */
+.modal-header h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* line 33, push_crm.scss */
+.modal-header p {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+
+/* line 36, push_crm.scss */
+.modal-body {
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #e8e8e8;
+  padding: 15px 30px;
+}
+
+/* line 39, push_crm.scss */
+.form_head {
+  margin-bottom: 30px;
+}
+/* line 42, push_crm.scss */
+.form_head h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* line 45, push_crm.scss */
+.modal-body .sec-head {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #D4D4D4;
+}
+/* line 48, push_crm.scss */
+.modal-body .sec-head h4 {
+  font-size: 12px;
+  font-weight: 700;
+  float: left;
+  color: #555;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+/* line 53, push_crm.scss */
+input[type='text'], input[type='password'] {
+  border: 1px solid #ddd;
+  height: 32px;
+  border-radius: 3px !important;
+  font-size: 12px;
+  padding: 5px 4px 6px 12px;
+  line-height: 19px;
+}
+
+/* line 56, push_crm.scss */
+.conv_funl_date input[type='text'] {
+  border: 1px solid #ddd;
+  height: 32px;
+  border-radius: 3px !important;
+  font-size: 12px;
+  padding: 5px 4px 4px 28px;
+  line-height: 19px;
+}
+
+/* line 57, push_crm.scss */
+input[type='text']::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/* line 58, push_crm.scss */
+input[type='text']:-moz-placeholder {
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/* line 59, push_crm.scss */
+input[type='text']::-moz-placeholder {
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/* line 63, push_crm.scss */
+#crm .modal-body .form-group {
+  float: none;
+}
+
+/* line 66, push_crm.scss */
+.btn-group {
+  position: relative;
+  top: -15px;
+  display: inline-block;
+  left: 0px;
+  width: 100%;
+}
+/* line 69, push_crm.scss */
+.btn-group a {
+  height: 32px;
+  width: initial;
+  border-radius: 4px !important;
+  border: 0px;
+  text-shadow: initial;
+  padding: 7px 10px;
+  margin: 0px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  position: relative;
+}
+/* line 70, push_crm.scss */
+.btn-group .btn_cancel {
+  background-color: #555;
+  transition: all 0.2s ease;
+}
+/* line 71, push_crm.scss */
+.btn-group .btn_next {
+  background-color: #5d8fc2;
+  margin-left: 5px;
+  transition: all 0.2s ease;
+  margin-right: 20px;
+}
+/* line 72, push_crm.scss */
+.btn-group .btn_next:hover {
+  background-color: #4175ab !important;
+}
+/* line 73, push_crm.scss */
+.btn-group .btn_cancel:hover {
+  background-color: #303030  !important;
+}
+/* line 74, push_crm.scss */
+.btn-group .btn_next:active {
+  top: 1px;
+}
+/* line 75, push_crm.scss */
+.btn-group .btn_cancel:active {
+  top: 1px;
+}
+/* line 76, push_crm.scss */
+.btn-group a:hover {
+  text-decoration: none;
+}
+
+/*
+label.ace-file-input { padding: 0;  height: 29px; margin: 0;}
+.ace-file-input .ace-file-container { height: 32px; border-radius: 3px;}
+.ace-file-input .ace-file-container .ace-file-name { height: 30px;}
+.ace-file-input .ace-file-container .ace-file-name:after { position: absolute; right: initial; left: 12px; color: #bbb; font-size: 12px; line-height: 30px;}
+.ace-file-input .ace-file-container:before { display: none;}
+.ace-file-input .ace-file-container:before { content: "" !important;}
+.ace-file-input .ace-file-container .ace-icon { right: 0; left: initial; background: #5d8fc2; border-radius: 3px;}
+*/
+/* line 90, push_crm.scss */
+#crm-ios .col-sm-7 {
+  width: 62.333%;
+}
+
+/* line 91, push_crm.scss */
+.ace-file-input .ace-file-container:before {
+  line-height: 27px;
+  border: 0;
+  background-color: #5d8fc2;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* line 92, push_crm.scss */
+.ace-file-input .ace-file-container .ace-icon {
+  left: inherit;
+  right: -30px;
+  background-color: inherit;
+  border: 0;
+  color: #5d8fc2;
+  line-height: 29px;
+  display: none;
+}
+
+/* line 93, push_crm.scss */
+.ace-file-input .ace-file-container .ace-file-name {
+  float: left;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+/* line 94, push_crm.scss */
+.ace-file-input .ace-file-container.selected + .remove {
+  right: 65px;
+}
+
+/* line 95, push_crm.scss */
+.ace-file-input .ace-file-container.selected {
+  right: 0;
+}
+
+/* line 96, push_crm.scss */
+.ace-file-input .ace-file-container {
+  border-radius: 3px;
+  padding-right: 57px;
+}
+
+/* line 97, push_crm.scss */
+.ace-file-input .ace-file-container.selected .ace-file-name .file-image {
+  right: -45px;
+  background-color: initial;
+}
+
+/* line 98, push_crm.scss */
+.ace-file-input .ace-file-container.selected .ace-file-name .ace-icon {
+  display: none;
+}
+
+/* line 100, push_crm.scss */
+#crm-ios .ace-file-input .ace-file-container .ace-icon.fa-upload:before {
+  content: "\f019";
+}
+
+/* line 101, push_crm.scss */
+.ace-file-input + i.download {
+  position: absolute;
+  right: -10px;
+  top: 17px;
+  color: #5d8fc2;
+}
+
+/* line 102, push_crm.scss */
+.ace-file-input + i.download:hover {
+  color: #4175ab;
+  cursor: pointer;
+}
+
+/* line 103, push_crm.scss */
+.ace-file-input + i.download + .tooltip .tooltip-inner {
+  left: 35px;
+  position: relative;
+}
+
+/* line 105, push_crm.scss */
+.dnd-note {
+  font-size: 12px;
+  min-height: 32px;
+  background: #ddd;
+  border-radius: 4px;
+  border: 0px;
+  margin-bottom: 0;
+}
+
+/* line 106, push_crm.scss */
+.dnd-note > p {
+  margin: 7px 5px 7px 10px;
+  color: #777;
+}
+
+/* line 108, push_crm.scss */
+.test-push {
+  margin: 0;
+  clear: both;
+  background: #fff;
+  overflow-X: auto;
+}
+
+/* line 112, push_crm.scss */
+#test-push-android .modal-body {
+  padding: 0;
+}
+/* line 113, push_crm.scss */
+#test-push-android .modal-content .modal-header {
+  padding-bottom: 15px;
+}
+/* line 114, push_crm.scss */
+#test-push-android .modal-body .sec-head {
+  border: 0;
+}
+/* line 115, push_crm.scss */
+#test-push-android .btn_next, #test-push-android .btn_cancel {
+  top: 19px;
+}
+
+/* line 120, push_crm.scss */
+#test-push-ios .modal-body {
+  padding: 0;
+}
+/* line 121, push_crm.scss */
+#test-push-ios .modal-content .modal-header {
+  padding-bottom: 15px;
+}
+/* line 122, push_crm.scss */
+#test-push-ios .modal-body .sec-head {
+  border: 0;
+}
+/* line 123, push_crm.scss */
+#test-push-ios .btn-group .info_cont p:nth-of-type(1) {
+  margin: 0;
+  margin-top: 15px;
+}
+
+/* line 125, push_crm.scss */
+.test-push .table {
+  font-size: 11px;
+}
+/* line 129, push_crm.scss */
+.test-push .table thead > tr {
+  background: initial;
+  background-image: initial;
+}
+/* line 130, push_crm.scss */
+.test-push .table thead > tr > th {
+  border: 0 !important;
+  padding-left: 8px !important;
+}
+/* line 131, push_crm.scss */
+.test-push .table thead > tr > th:first-of-type {
+  padding-left: 18px !important;
+  width: 30px;
+}
+/* line 132, push_crm.scss */
+.test-push .table tbody > tr.odd {
+  background-color: #f9f9f9;
+}
+/* line 133, push_crm.scss */
+.test-push .table tbody > tr:hover {
+  background-color: #E1E9F1 !important;
+}
+/* line 134, push_crm.scss */
+.test-push .table tr:last-of-type > td {
+  border-bottom: 1px solid #ddd;
+}
+/* line 135, push_crm.scss */
+.test-push .table tbody > tr > td:first-of-type {
+  padding-left: 18px !important;
+}
+
+/* line 139, push_crm.scss */
+.no-border {
+  border: 0;
+}
+
+/* line 140, push_crm.scss */
+.btn-group .info_cont {
+  font-size: 10px;
+  padding-left: 15px;
+  float: left;
+  width: 350px;
+}
+
+/* line 141, push_crm.scss */
+.btn-group .info_cont p:nth-of-type(1) {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* line 142, push_crm.scss */
+.btn-group .info_cont p:nth-of-type(1) > a {
+  padding: 0;
+  line-height: inherit;
+  height: inherit;
+  color: #5d8fc2;
+  float: none;
+}
+
+/* line 143, push_crm.scss */
+.btn-group .info_cont p:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+/* line 145, push_crm.scss */
+.btn_wave {
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 0;
+}
+
+/* line 148, push_crm.scss */
+.ink {
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 151, push_crm.scss */
+.animate {
+  -webkit-animation: ripple 0.65s linear;
+  -moz-animation: ripple 0.65s linear;
+  -ms-animation: ripple 0.65s linear;
+  -o-animation: ripple 0.65s linear;
+  animation: ripple 0.65s linear;
+}
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+  }
+}
+@-moz-keyframes ripple {
+  100% {
+    opacity: 0;
+    -moz-transform: scale(2.5);
+  }
+}
+@-o-keyframes ripple {
+  100% {
+    opacity: 0;
+    -o-transform: scale(2.5);
+  }
+}
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+/*********************    To give effect on modal box     *****************/
+/* line 175, push_crm.scss */
+.modal.fade .modal-dialog {
+  margin-top: 85px;
+  -webkit-transition: -webkit-transform .1s ease-out;
+  -o-transition: -o-transform .1s ease-out;
+  transition: transform .1s ease-out;
+  -webkit-transform: translate3d(0, 0, 0) scale(0.5, 0.5);
+  -o-transform: translate3d(0, 0, 0) scale(0.5, 0.5);
+  transform: translate3d(0, 0, 0) scale(0.5, 0.5);
+}
+
+/* line 184, push_crm.scss */
+.modal.in .modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0) scale(1, 1);
+  -o-transform: translate3d(0, 0, 0) scale(1, 1);
+  transform: translate3d(0, 0, 0) scale(1, 1);
+}
+
+/* line 192, push_crm.scss */
+.audi_name label {
+  text-align: left !important;
+  width: inherit;
+  padding-right: 0;
+  font-size: 12px;
+}
+
+/* line 195, push_crm.scss */
+#push_sett_andr label {
+  font-size: 12px;
+}
+
+/*********************    Query Builder plugin css    *****************/
+/* line 198, push_crm.scss */
+.modal#add_audience, .modal#create_rule {
+  margin-left: -350px;
+  box-shadow: none;
+  border: 0;
+  float: left;
+  padding: 0 !important;
+  left: 50%;
+  bottom: inherit !important;
+  overflow-y: hidden !important;
+  border-radius: 4px;
+}
+
+/* line 207, push_crm.scss */
+#add_audience h4.rules-group-title, #create_rule h4.rules-group-title {
+  color: #666;
+  font-weight: 600;
+  font-size: 13px;
+  position: absolute;
+  z-index: 1;
+  left: 40px;
+  margin-left: -9px;
+}
+
+/* line 208, push_crm.scss */
+#add_audience .modal-body, #create_rule .modal-body {
+  padding: 15px 20px;
+}
+
+/* line 210, push_crm.scss */
+.query-builder button {
+  transition: all 0.2s ease;
+}
+/* line 211, push_crm.scss */
+.query-builder #builder-plugins_group_0 {
+  padding-top: 35px;
+}
+/* line 212, push_crm.scss */
+.query-builder .btn-group.group-actions {
+  width: inherit;
+  top: inherit;
+}
+/* line 213, push_crm.scss */
+.query-builder .btn-group.rule-actions {
+  width: inherit;
+  top: 5px;
+  padding-right: 5px;
+}
+/* line 214, push_crm.scss */
+.query-builder .btn-group.group-conditions {
+  width: inherit;
+  top: inherit;
+}
+/* line 215, push_crm.scss */
+.query-builder .rules-group-container {
+  border: 1px solid #bbb;
+  background: #ddd;
+}
+/* line 216, push_crm.scss */
+.query-builder button[data-delete="rule"] {
+  border: 0;
+  padding: 0;
+  line-height: 1;
+  background-color: transparent !important;
+  color: #d15b47 !important;
+  font-size: 18px;
+}
+/* line 217, push_crm.scss */
+.query-builder button[data-delete="rule"]:hover {
+  color: #c9302c !important;
+}
+/* line 218, push_crm.scss */
+.query-builder .rules-group-container .btn-group > .btn:first-of-type {
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+/* line 219, push_crm.scss */
+.query-builder .rules-group-container .btn-group > .btn:last-of-type {
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+/* line 220, push_crm.scss */
+.query-builder .rules-group-container .btn-group > .btn {
+  text-shadow: 0 0 0 transparent !important;
+}
+/* line 221, push_crm.scss */
+.query-builder .rules-group-container .btn-group > .btn-xs.active:after {
+  border: 0;
+}
+/* line 222, push_crm.scss */
+.query-builder .rules-group-container .btn-group > .btn:first-child {
+  margin: 0;
+}
+/* line 223, push_crm.scss */
+.query-builder .rules-group-container .btn-group > .btn-primary:not(.active):hover {
+  background-color: #286090 !important;
+  border-color: #204d74 !important;
+}
+/* line 224, push_crm.scss */
+.query-builder .rules-group-container .btn-group > .btn-success:hover {
+  background-color: #449d44 !important;
+  border-color: #398439 !important;
+}
+/* line 225, push_crm.scss */
+.query-builder .rule-value-container input.form-control {
+  height: 32px;
+  border-radius: 3px !important;
+  border-color: #b5b5b5;
+  padding-left: 10px;
+  transition: background-color 0.15s ease-in-out;
+}
+/* line 226, push_crm.scss */
+.query-builder .rule-value-container input.form-control:hover {
+  background-color: #e8e8e8;
+}
+/* line 227, push_crm.scss */
+.query-builder .rule-operator-container select.form-control {
+  height: 32px;
+  border-radius: 3px !important;
+}
+/* line 228, push_crm.scss */
+.query-builder .rule-filter-container select.form-control {
+  height: 32px;
+  border-radius: 3px !important;
+}
+/* line 229, push_crm.scss */
+.query-builder .rules-group-container .btn-group.bootstrap-select {
+  width: initial;
+  top: inherit;
+  min-width: 120px;
+}
+/* line 232, push_crm.scss */
+.query-builder .rules-group-container .checkbox-primary, .query-builder .rules-group-container .radio-success, .query-builder .rules-group-container .radio-danger {
+  display: none;
+}
+/* line 235, push_crm.scss */
+.query-builder .bootstrap-select .btn-inverse {
+  background-color: #fff !important;
+  border-color: #b5b5b5;
+  color: #777 !IMPORTANT;
+  line-height: 24px;
+  transition: background-color 0.15s ease-in-out;
+}
+/* line 236, push_crm.scss */
+.query-builder .bootstrap-select .btn-inverse:hover {
+  background-color: #e8e8e8 !important;
+}
+/* line 237, push_crm.scss */
+.query-builder .bootstrap-select .dropdown-toggle:focus {
+  outline: 0 !important;
+}
+/* line 238, push_crm.scss */
+.query-builder .rules-group-header .btn-default {
+  background-color: #fff !important;
+  color: #393939 !important;
+  text-shadow: 0 0 0 transparent;
+  border-radius: 3px;
+  transition: background-color 0.15s ease-in-out;
+}
+/* line 239, push_crm.scss */
+.query-builder .rules-group-header .btn-default:hover {
+  background-color: #e8e8e8 !important;
+}
+/* line 240, push_crm.scss */
+.query-builder .rules-group-header .btn-default:focus {
+  outline: 0;
+}
+/* line 241, push_crm.scss */
+.query-builder .rule-value-container {
+  border: 0;
+  padding-left: 0;
+}
+/* line 242, push_crm.scss */
+.query-builder .rules-list > ::after, .query-builder .rules-list > ::before {
+  border-color: #bbb;
+}
+/* line 243, push_crm.scss */
+.query-builder .rule-container {
+  border-color: #bbb;
+  background: #eee;
+}
+/* line 244, push_crm.scss */
+.query-builder .btn-primary {
+  color: #fff;
+  background-color: #337ab7 !important;
+  border-color: #2e6da4;
+}
+/* line 245, push_crm.scss */
+.query-builder .btn-success {
+  color: #fff;
+  background-color: #5cb85c !important;
+  border-color: #4cae4c;
+}
+/* line 246, push_crm.scss */
+.query-builder .btn-primary.active {
+  background-color: #286090 !important;
+  border-color: #204d74;
+}
+/* line 247, push_crm.scss */
+.query-builder .btn-group > .btn, .query-builder .btn-group > .btn + .btn {
+  margin: 0;
+}
+/* line 248, push_crm.scss */
+.query-builder button.btn-info {
+  display: none;
+}
+/* line 249, push_crm.scss */
+.query-builder .rules-list > :first-child::before {
+  top: -11px;
+}
+
+/* line 251, push_crm.scss */
+.btn-group.bootstrap-select a {
+  float: left;
+}
+
+/* line 252, push_crm.scss */
+.btn-group.bootstrap-select a:focus {
+  background: initial;
+  outline: 0;
+  color: inherit;
+}
+
+/* line 253, push_crm.scss */
+.btn-group.bootstrap-select a:hover {
+  background: initial;
+  outline: 0;
+  color: inherit;
+}
+
+/* line 257, push_crm.scss */
+#review_audience table td:first-of-type {
+  min-width: 120px;
+  font-weight: 600;
+}
+
+/* line 260, push_crm.scss */
+.modal#review_audience {
+  top: 50%;
+  margin-top: -218px;
+  width: 450px;
+  margin-left: -225px;
+  left: 50%;
+  box-shadow: none;
+  border: 0;
+  float: left;
+  padding: 0 !important;
+  left: 50%;
+  bottom: inherit !important;
+  overflow-y: hidden !important;
+  border-radius: 4px;
+}
+
+/* line 267, push_crm.scss */
+h4.audi_size {
+  color: #337ab7;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: inline-block;
+  margin: 0;
+  margin-left: 30px;
+  margin-top: 7px;
+}
+
+/* line 269, push_crm.scss */
+.bs-container.open {
+  z-index: 9999991;
+}
+
+@media (min-width: 720px) {
+  /* line 272, push_crm.scss */
+  .modal {
+    width: 700px;
+    top: 16px;
+    margin-top: initial;
+    margin-left: -350px;
+  }
+}
+@media (max-width: 570px) {
+  /* line 275, push_crm.scss */
+  .modal {
+    width: 94%;
+    top: 16px;
+    margin-top: initial;
+    margin-left: 3%;
+  }
+
+  /* line 276, push_crm.scss */
+  .modal-dialog {
+    width: 540px;
+    margin: 40px auto;
+  }
+}
+@media (min-width: 552px) {
+  /* line 281, push_crm.scss */
+  #add_audience .modal-dialog, #create_rule .modal-dialog {
+    width: 700px;
+    margin: 40px auto;
+  }
+
+  /* line 282, push_crm.scss */
+  #test-push-ios .modal-dialog {
+    width: 550px;
+  }
+
+  /* line 283, push_crm.scss */
+  #test-push-android .modal-dialog {
+    width: 550px;
+  }
+}
+@media (max-width: 551px) {
+  /* line 287, push_crm.scss */
+  .modal-dialog {
+    width: 94%;
+    margin: 40px auto;
+  }
+
+  /* line 288, push_crm.scss */
+  .btn-group .info_cont {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 15px;
+  }
+
+  /* line 289, push_crm.scss */
+  #test-push-android .btn_next, #test-push-android .btn_cancel {
+    position: initial;
+  }
+}
+@media (max-width: 767px) {
+  /* line 293, push_crm.scss */
+  #crm-ios .col-sm-7 {
+    width: 98%;
+  }
+}
